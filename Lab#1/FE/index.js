@@ -40,7 +40,7 @@ submitBtn.addEventListener('click', function(event){
   }
   else
   {
-    alert("ID IS REQUIRED");
+    alert("Employee ID IS REQUIRED");
   }
 });
 
