@@ -34,7 +34,14 @@ function fetchEmployees() {
 var submitBtn = document.querySelector("#submitBtn")
 submitBtn.addEventListener('click', function(event){
   event.preventDefault();
-  createEmployee();
+  var empId = (document.querySelector("#id")).value;
+  if (empId != "") {
+    createEmployee();
+  }
+  else
+  {
+    alert("ID IS REQUIRED");
+  }
 });
 
 // TODO
